@@ -43,23 +43,45 @@
 
         .header {
             background: linear-gradient(135deg, var(--primary-dark), var(--primary));
-            color: #FFFFFF;
-            padding: 40px 32px;
+            color: #FFFFFF !important;
+            padding: 44px 32px 36px 32px;
             text-align: center;
         }
 
+        .logo-container {
+            margin-bottom: 16px;
+        }
+
+        .app-logo {
+            width: 88px;
+            height: 88px;
+            border-radius: 22px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+            background: #FFFFFF;
+            padding: 4px;
+            border: 2px solid rgba(255, 255, 255, 0.5);
+            display: inline-block;
+            object-fit: contain;
+        }
+
         .header h1 {
-            font-size: 26px;
+            color: #FFFFFF !important;
+            font-size: 28px;
             font-weight: 800;
             margin-bottom: 8px;
             letter-spacing: -0.5px;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
         }
 
-        .header p {
-            font-size: 14px;
-            opacity: 0.92;
-            max-width: 600px;
+        .header p, .header .subtitle {
+            color: #FFFFFF !important;
+            font-size: 15px;
+            font-weight: 500;
+            opacity: 1 !important;
+            line-height: 1.6;
+            max-width: 620px;
             margin: 0 auto;
+            text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
         }
 
         .lang-nav {
@@ -206,8 +228,11 @@
 
 <div class="container">
     <div class="header">
+        <div class="logo-container">
+            <img src="traceterra_logo.png" alt="TraceTerra Logo" class="app-logo">
+        </div>
         <h1>TraceTerra</h1>
-        <p>นโยบายความเป็นส่วนตัวและขั้นตอนการขอลบข้อมูลผู้ใช้งาน<br>Privacy Policy &amp; User Data Deletion</p>
+        <p class="subtitle">นโยบายความเป็นส่วนตัวและขั้นตอนการขอลบข้อมูลผู้ใช้งาน<br>Privacy Policy &amp; User Data Deletion</p>
         <div class="lang-nav">
             <a href="#th" class="lang-btn">🇹🇭 ภาษาไทย</a>
             <a href="#en" class="lang-btn">🇺🇸 English</a>
