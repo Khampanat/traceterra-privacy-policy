@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy & Account Deletion - TraceTerra (นโยบายความเป็นส่วนตัวและการลบข้อมูล)</title>
+    <style>
+        :root {
+            --primary: #2E7D32;
+            --primary-dark: #1B5E20;
+            --primary-light: #E8F5E9;
+            --accent: #E65100;
+            --text: #212121;
+            --text-secondary: #555555;
+            --bg: #F4F7F4;
+            --card-bg: #FFFFFF;
+            --border: #E0E0E0;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Sarabun", Helvetica, Arial, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.65;
+            padding: 24px 16px;
+        }
+
+        .container {
+            max-width: 880px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            border-radius: 20px;
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+            overflow: hidden;
+            border: 1px solid var(--border);
+        }
+
+        .header {
+            background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+            color: #FFFFFF;
+            padding: 40px 32px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 26px;
+            font-weight: 800;
+            margin-bottom: 8px;
+            letter-spacing: -0.5px;
+        }
+
+        .header p {
+            font-size: 14px;
+            opacity: 0.92;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .lang-nav {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-top: 20px;
+        }
+
+        .lang-btn {
+            background: rgba(255, 255, 255, 0.2);
+            color: #FFFFFF;
+            text-decoration: none;
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 600;
+            transition: 0.2s;
+            border: 1px solid rgba(255, 255, 255, 0.35);
+        }
+
+        .lang-btn:hover {
+            background: #FFFFFF;
+            color: var(--primary-dark);
+        }
+
+        .content {
+            padding: 36px 32px;
+        }
+
+        h2 {
+            color: var(--primary-dark);
+            font-size: 20px;
+            font-weight: 700;
+            margin: 32px 0 16px 0;
+            padding-bottom: 8px;
+            border-bottom: 2px solid var(--primary-light);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        h3 {
+            color: var(--accent);
+            font-size: 16px;
+            font-weight: 700;
+            margin: 20px 0 8px 0;
+        }
+
+        p, li {
+            color: var(--text-secondary);
+            font-size: 14.5px;
+            margin-bottom: 12px;
+        }
+
+        ul, ol {
+            padding-left: 24px;
+            margin-bottom: 16px;
+        }
+
+        li {
+            margin-bottom: 6px;
+        }
+
+        .highlight-box {
+            background: var(--primary-light);
+            border-left: 4px solid var(--primary);
+            padding: 16px 20px;
+            border-radius: 0 12px 12px 0;
+            margin: 20px 0;
+        }
+
+        .highlight-box p {
+            color: var(--primary-dark);
+            font-size: 14px;
+            margin: 0;
+            font-weight: 500;
+        }
+
+        .deletion-card {
+            background: #FFF8E1;
+            border: 1px solid #FFE082;
+            border-left: 4px solid var(--accent);
+            padding: 20px;
+            border-radius: 0 12px 12px 0;
+            margin: 24px 0;
+        }
+
+        .deletion-card h3 {
+            color: #C62828;
+            margin-top: 0;
+        }
+
+        .badge {
+            display: inline-block;
+            background: var(--primary);
+            color: #fff;
+            padding: 2px 8px;
+            border-radius: 6px;
+            font-size: 11px;
+            font-weight: 700;
+            vertical-align: middle;
+        }
+
+        .contact-box {
+            background: #F9FBE7;
+            border: 1px solid #C5E1A5;
+            border-radius: 12px;
+            padding: 20px;
+            margin: 28px 0;
+        }
+
+        .contact-box p {
+            margin: 4px 0;
+            color: #33691E;
+            font-weight: 500;
+        }
+
+        .footer {
+            background: #F1F4F1;
+            padding: 24px 32px;
+            text-align: center;
+            font-size: 12px;
+            color: #757575;
+            border-top: 1px solid var(--border);
+        }
+
+        .divider {
+            border: 0;
+            height: 1px;
+            background: var(--border);
+            margin: 40px 0;
+        }
+
+        @media (max-width: 600px) {
+            body { padding: 12px 8px; }
+            .header { padding: 28px 20px; }
+            .content { padding: 24px 18px; }
+            .header h1 { font-size: 22px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <h1>TraceTerra</h1>
+        <p>นโยบายความเป็นส่วนตัวและขั้นตอนการขอลบข้อมูลผู้ใช้งาน<br>Privacy Policy &amp; User Data Deletion</p>
+        <div class="lang-nav">
+            <a href="#th" class="lang-btn">🇹🇭 ภาษาไทย</a>
+            <a href="#en" class="lang-btn">🇺🇸 English</a>
+        </div>
+    </div>
+
+    <div class="content">
+
+        <!-- ==================== THAI VERSION ==================== -->
+        <div id="th">
+            <p><strong>มีผลบังคับใช้ตั้งแต่วันที่:</strong> 1 มีนาคม 2569 (Last Updated: March 2026)</p>
+
+            <div class="highlight-box">
+                <p>แอปพลิเคชัน <strong>TraceTerra (เทรซเทอร์รา)</strong> มุ่งมั่นที่จะปกป้องข้อมูลส่วนบุคคลของคุณตามพระราชบัญญัติคุ้มครองข้อมูลส่วนบุคคล (PDPA) และมาตรฐานนโยบายความปลอดภัยข้อมูลผู้ใช้ของ Google Play อย่างเคร่งครัด</p>
+            </div>
+
+            <h2>1. ข้อมูลที่เราเก็บรวบรวมและการใช้งาน</h2>
+            <p>เพื่อให้บริการฟังก์ชันการสำรวจรังวัดที่ดินและการเกษตรแม่นยำ แอปพลิเคชันจำเป็นต้องเข้าถึงและรวบรวมข้อมูลดังต่อไปนี้:</p>
+
+            <ul>
+                <li>
+                    <strong>ข้อมูลตำแหน่งพิกัดทางภูมิศาสตร์ (Location Data - GPS):</strong>
+                    <br>แอปพลิเคชันเข้าถึงพิกัดละติจูด-ลองจิจูด และค่าความสูง (Elevation) ทั้งขณะเปิดใช้งานแอป (Foreground) และขณะหน้าจอดับหรือทำงานเบื้องหลัง (Background Service ผ่าน TrackingService) <em>เฉพาะเมื่อผู้ใช้กดเริ่มบันทึกเส้นทางสำรวจ (Tracking Mode)</em> เพื่อคำนวณขนาดพื้นที่แปลงที่ดิน (ไร่-งาน-วา), ระยะความยาวแนวเขต, เส้นทางเดิน/ขับรถสำรวจ และคำนวณมุมราบ (Azimuth)
+                </li>
+                <li>
+                    <strong>ข้อมูลรูปภาพและกล้องถ่ายรูป (Camera &amp; Photo Data):</strong>
+                    <br>แอปพลิเคชันเข้าถึงกล้องและคลังภาพเมื่อผู้ใช้เลือกถ่ายภาพแปลงที่ดิน, บันทึกภาพหมุดสำรวจ (Survey Pins) หรือถ่ายภาพใบพืชเพื่อส่งไปวิเคราะห์โรคพืชด้วยปัญญาประดิษฐ์ (AI Plant Disease Diagnosis) รูปภาพจะถูกจัดเก็บไว้ในเครื่องของคุณ และซิงค์ขึ้น Cloud Storage เฉพาะเมื่อคุณเลือกสำรองข้อมูล
+                </li>
+                <li>
+                    <strong>ข้อมูลบัญชีผู้ใช้ (Account Data):</strong>
+                    <br>เมื่อผู้ใช้เลือกเข้าสู่ระบบด้วย Google Sign-In แอปพลิเคชันจะรวบรวมข้อมูลพื้นฐาน ได้แก่ อีเมล (Email), ชื่อที่แสดง (Display Name), และรหัสประจำตัวผู้ใช้ (UID) เพื่อใช้ในการซิงค์ข้อมูลประวัติการสำรวจผ่าน Google Drive, การจัดการยอดเหรียญเครดิต (In-App Credits) และการตรวจสอบสิทธิ์ VIP สำหรับผู้ทดสอบ
+                </li>
+                <li>
+                    <strong>ข้อมูลการส่งออกไฟล์ทางรังวัด (Exported Files &amp; Storage):</strong>
+                    <br>แอปพลิเคชันสร้างไฟล์ส่งออกทางรังวัดตามคำสั่งของคุณ เช่น AutoCAD DXF, ESRI Shapefile (.zip), GeoJSON, CSV และดาวน์โหลดภาพแผนที่ดาวเทียมออฟไลน์ (Offline Tile Cache) มาเก็บไว้ในเครื่อง เพื่อให้สามารถทำงานได้ในพื้นที่ที่ไม่มีสัญญาณอินเทอร์เน็ต
+                </li>
+            </ul>
+
+            <h2>2. การรักษาความปลอดภัยของข้อมูล (Data Security)</h2>
+            <ul>
+                <li>ข้อมูลทั้งหมดที่ส่งผ่านเครือข่ายอินเทอร์เน็ตจะได้รับการเข้ารหัสความปลอดภัยขั้นสูงผ่านโปรโตคอล <strong>HTTPS (TLS/SSL)</strong></li>
+                <li>ข้อมูลงานสำรวจของคุณ เช่น ขอบเขตแปลงที่ดิน จุดหมุดรังวัด และภาพถ่าย จะถูกเก็บรักษาไว้ในหน่วยความจำเฉพาะของแอปพลิเคชัน (Private App Storage) และระบบ Google Drive ส่วนตัวของคุณ ผู้พัฒนาไม่สามารถเข้าถึงกรรมสิทธิ์หรือโฉนดที่ดินของคุณได้</li>
+            </ul>
+
+            <h2>3. บริการของบุคคลที่สาม (Third-Party Services)</h2>
+            <p>แอปพลิเคชันผสานการทำงานร่วมกับบริการภายนอกที่น่าเชื่อถือภายใต้นโยบายความปลอดภัย:</p>
+            <ul>
+                <li><strong>Google Maps SDK &amp; Google Play Services:</strong> แสดงผลแผนที่ดาวเทียมและการระบุตำแหน่งพิกัด</li>
+                <li><strong>Firebase (Google LLC):</strong> บริการพิสูจน์ตัวตน (Authentication) และ Cloud Firestore สำหรับระบบจัดการเครดิต</li>
+                <li><strong>AgroMonitoring (OpenWeather Ltd.):</strong> ดึงภาพถ่ายความสมบูรณ์ของพืชจากดาวเทียม Sentinel-2 (NDVI)</li>
+                <li><strong>Open-Meteo API:</strong> ดึงข้อมูลสภาพอากาศและระดับความสูงน้ำทะเลปานกลาง (Elevation MSL)</li>
+                <li><strong>ตลาดสี่มุมเมือง &amp; สศก. (data.go.th):</strong> ดึงข้อมูลราคาสินค้าเกษตรและราคาหน้าฟาร์มสาธารณะ</li>
+            </ul>
+
+            <div class="deletion-card" id="deletion">
+                <h3>🗑️ 4. การลบบัญชีและข้อมูลผู้ใช้งาน (Account &amp; Data Deletion Policy)</h3>
+                <p>ตามนโยบายคุ้มครองข้อมูลผู้ใช้ของ Google Play ผู้ใช้งาน TraceTerra มีสิทธิ์ขอลบบัญชีผู้ใช้และข้อมูลที่เกี่ยวข้องทั้งหมดได้ตลอดเวลา โดยมี 2 วิธีดังนี้:</p>
+
+                <h4>วิธีที่ 1: ลบข้อมูลด้วยตนเองผ่านตัวแอปพลิเคชัน (In-App Deletion - ดำเนินการทันที)</h4>
+                <ol>
+                    <li>เปิดแอปพลิเคชัน <strong>TraceTerra</strong></li>
+                    <li>ไปที่เมนู <strong>"ประวัติการสำรวจ" (History)</strong> ➔ กดปุ่มไอคอนถังขยะ เพื่อลบประวัติงานสำรวจและหมุดปักทั้งหมด</li>
+                    <li>ไปที่เมนู <strong>"เครื่องมือ" (Tools)</strong> ➔ กดปุ่ม <strong>"ออกจากระบบ" (Sign Out)</strong></li>
+                    <li>หากต้องการลบข้อมูลทั้งหมดออกจากเครื่อง: ไปที่การตั้งค่าโทรศัพท์ (Android Settings) ➔ แอปพลิเคชัน (Apps) ➔ TraceTerra ➔ ที่เก็บข้อมูล (Storage) ➔ <strong>"ล้างข้อมูลทั้งหมด" (Clear Data)</strong></li>
+                </ol>
+
+                <h4>วิธีที่ 2: ขอลบบัญชีและข้อมูลบนเซิร์ฟเวอร์ถาวรผ่านอีเมล (Web / Email Request)</h4>
+                <p>หากคุณได้ถอนการติดตั้งแอปไปแล้ว หรือต้องการให้ลบข้อมูลบัญชีและยอดเครดิตออกจากระบบ Cloud อย่างถาวร:</p>
+                <ul>
+                    <li>ส่งอีเมลแจ้งความประสงค์มาที่: <strong style="color: #C62828;">doxgie.dev@gmail.com</strong></li>
+                    <li>ระบุหัวข้อ: <em>"ขอลบบัญชีและข้อมูล TraceTerra (Request Data Deletion)"</em></li>
+                    <li>ระบุอีเมล Google Account ที่คุณเคยใช้เข้าสู่ระบบในแอป</li>
+                    <li><strong>ระยะเวลาดำเนินการ:</strong> ทีมงานจะดำเนินการลบข้อมูลบัญชี รหัสประจำตัว ประวัติการสำรวจบนคลาวด์ และประวัติเครดิตทั้งหมดของคุณออกจากฐานข้อมูล Firebase ภายใน <strong>7 วันทำการ</strong> และจะส่งอีเมลยืนยันผลการลบข้อมูลให้คุณทราบ</li>
+                </ul>
+
+                <p style="margin-top: 12px;"><strong>ประเภทข้อมูลที่จะถูกลบถาวร:</strong> ข้อมูลบัญชีผู้ใช้, อีเมล, ชื่อโปรไฟล์, ประวัติงานสำรวจและพิกัดแปลงที่ดินบน Cloud, ภาพถ่ายทั้งหมด และประวัติการใช้งานเครดิต</p>
+            </div>
+
+            <h2>5. การเปลี่ยนแปลงนโยบายความเป็นส่วนตัว</h2>
+            <p>เราอาจปรับปรุงนโยบายความเป็นส่วนตัวนี้เป็นครั้งคราวตามการอัปเดตฟังก์ชันของแอปพลิเคชันหรือข้อกำหนดทางกฎหมาย โดยการเปลี่ยนแปลงใดๆ จะมีผลทันทีเมื่อมีการเผยแพร่ในหน้านี้</p>
+
+            <div class="contact-box">
+                <h3 style="margin-top: 0; color: #2E7D32;">📬 ติดต่อผู้พัฒนา (Contact Us)</h3>
+                <p>หากคุณมีคำถาม ข้อเสนอแนะ หรือต้องการความช่วยเหลือเกี่ยวกับนโยบายความเป็นส่วนตัว สามารถติดต่อได้ที่:</p>
+                <p><strong>ผู้พัฒนา:</strong> Doxgie Dev (TraceTerra Team)</p>
+                <p><strong>อีเมล:</strong> <a href="mailto:doxgie.dev@gmail.com" style="color: #2E7D32; font-weight: bold;">doxgie.dev@gmail.com</a></p>
+                <p><strong>เว็บไซต์โครงการ:</strong> <a href="https://github.com/khampanat" target="_blank" style="color: #2E7D32;">github.com/khampanat</a></p>
+            </div>
+        </div>
+
+        <hr class="divider">
+
+        <!-- ==================== ENGLISH VERSION ==================== -->
+        <div id="en">
+            <h2>TraceTerra Privacy Policy &amp; Account Deletion</h2>
+            <p><strong>Effective Date:</strong> March 1, 2026 (Last Updated: March 2026)</p>
+
+            <div class="highlight-box">
+                <p><strong>TraceTerra</strong> is committed to protecting your personal data and ensuring transparent compliance with the Google Play Developer Program Policies and international privacy regulations.</p>
+            </div>
+
+            <h3>1. Information We Collect and How We Use It</h3>
+            <ul>
+                <li>
+                    <strong>Location Data (GPS):</strong>
+                    TraceTerra collects precise location data (latitude, longitude, elevation) both when the app is running in the foreground and in the background (via a foreground tracking service). This is strictly required to record surveying boundary lines, calculate land parcel area (Rai-Ngan-Wah / Sq.m.), compute azimuth bearings, and provide navigation. Background tracking only occurs when you explicitly tap the "Start Tracking" button.
+                </li>
+                <li>
+                    <strong>Camera and Photo Storage:</strong>
+                    The app accesses your camera and storage only when you capture field survey photos, attach images to waypoints, or photograph plant leaves for AI-powered disease diagnosis. Photos remain on your device unless you initiate a cloud backup.
+                </li>
+                <li>
+                    <strong>User Account Information:</strong>
+                    When signing in via Google Sign-In, we collect your email address, display name, and user ID (UID). This information is used for Google Drive survey data synchronization, In-App Credit management, and VIP testing authorization.
+                </li>
+                <li>
+                    <strong>Storage &amp; Cadastral Export Files:</strong>
+                    The app generates surveying files requested by you (AutoCAD DXF, ESRI Shapefile .zip, GeoJSON, CSV, and KMZ) and caches offline satellite map tiles locally on your device for offline fieldwork.
+                </li>
+            </ul>
+
+            <h3>2. Data Security</h3>
+            <p>All network transmissions are securely encrypted using standard HTTPS (TLS/SSL). Your spatial survey data, cadastral boundaries, and photos are stored within private application storage or your personal Google Drive account. We do not sell or monetize personal surveying data.</p>
+
+            <h3>3. Third-Party Services</h3>
+            <p>TraceTerra integrates with trusted third-party SDKs and public APIs:</p>
+            <ul>
+                <li>Google Maps SDK &amp; Google Play Services (Mapping &amp; Geocoding)</li>
+                <li>Firebase Authentication &amp; Firestore (Account &amp; Credit Management)</li>
+                <li>AgroMonitoring (Sentinel-2 Satellite NDVI Vegetative Health Imagery)</li>
+                <li>Open-Meteo DEM API (Weather &amp; Elevation MSL Data)</li>
+            </ul>
+
+            <div class="deletion-card">
+                <h3>🗑️ 4. Account &amp; Data Deletion Policy</h3>
+                <p>In accordance with Google Play's User Data policy, users have full rights to delete their account and associated data at any time:</p>
+
+                <h4>Method 1: In-App Deletion (Immediate)</h4>
+                <ol>
+                    <li>Open <strong>TraceTerra</strong> app.</li>
+                    <li>Go to <strong>History</strong> ➔ Tap the Delete/Trash icon to clear all local survey records.</li>
+                    <li>Go to <strong>Tools</strong> ➔ Tap <strong>"Sign Out"</strong> to disconnect your Google account.</li>
+                    <li>To completely wipe all local data: Navigate to your phone's Settings ➔ Apps ➔ TraceTerra ➔ Storage ➔ <strong>"Clear Data"</strong>.</li>
+                </ol>
+
+                <h4>Method 2: Permanent Cloud Account &amp; Data Deletion Request (Web / Email)</h4>
+                <p>If you have uninstalled the app or wish to permanently erase your cloud account records and credit balance:</p>
+                <ul>
+                    <li>Send an email to: <strong style="color: #C62828;">doxgie.dev@gmail.com</strong></li>
+                    <li>Subject line: <em>"TraceTerra User Data Deletion Request"</em></li>
+                    <li>Provide the Google email address associated with your TraceTerra account.</li>
+                    <li><strong>Processing Time:</strong> Our team will permanently delete your user profile, credit records, and cloud-synced survey files from Firebase Firestore within <strong>7 business days</strong>, followed by a written confirmation email.</li>
+                </ul>
+            </div>
+
+            <h3>5. Contact Us</h3>
+            <p>If you have any questions or concerns regarding this Privacy Policy, please contact us at:</p>
+            <p><strong>Developer:</strong> Doxgie Dev (TraceTerra Team)</p>
+            <p><strong>Email:</strong> <a href="mailto:doxgie.dev@gmail.com" style="color: #2E7D32; font-weight: bold;">doxgie.dev@gmail.com</a></p>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        &copy; 2026 TraceTerra - Precision Agriculture &amp; Land Survey. All rights reserved.
+    </div>
+</div>
+
+</body>
+</html>
