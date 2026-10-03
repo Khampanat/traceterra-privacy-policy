@@ -243,7 +243,7 @@
 
         <!-- ==================== THAI VERSION ==================== -->
         <div id="th">
-            <p><strong>มีผลบังคับใช้ตั้งแต่วันที่:</strong> 1 มีนาคม 2569 (Last Updated: March 2026)</p>
+            <p><strong>มีผลบังคับใช้ตั้งแต่วันที่:</strong> 3 ตุลาคม 2569 (Last Updated: October 2026)</p>
 
             <div class="highlight-box">
                 <p>แอปพลิเคชัน <strong>TraceTerra (เทรซเทอร์รา)</strong> มุ่งมั่นที่จะปกป้องข้อมูลส่วนบุคคลของคุณตามพระราชบัญญัติคุ้มครองข้อมูลส่วนบุคคล (PDPA) และมาตรฐานนโยบายความปลอดภัยข้อมูลผู้ใช้ของ Google Play อย่างเคร่งครัด</p>
@@ -255,7 +255,7 @@
             <ul>
                 <li>
                     <strong>ข้อมูลตำแหน่งพิกัดทางภูมิศาสตร์ (Location Data - GPS):</strong>
-                    <br>แอปพลิเคชันเข้าถึงพิกัดละติจูด-ลองจิจูด และค่าความสูง (Elevation) ทั้งขณะเปิดใช้งานแอป (Foreground) และขณะหน้าจอดับหรือทำงานเบื้องหลัง (Background Service ผ่าน TrackingService) <em>เฉพาะเมื่อผู้ใช้กดเริ่มบันทึกเส้นทางสำรวจ (Tracking Mode)</em> เพื่อคำนวณขนาดพื้นที่แปลงที่ดิน (ไร่-งาน-วา), ระยะความยาวแนวเขต, เส้นทางเดิน/ขับรถสำรวจ และคำนวณมุมราบ (Azimuth)
+                    <br>แอปพลิเคชันเข้าถึงพิกัดละติจูด-ลองจิจูด และค่าความสูง (Elevation) ขณะเปิดใช้งานแอป (Foreground) รวมถึงขณะทำงานผ่านบริการแจ้งเตือนเบื้องหน้า (Foreground Service ผ่าน TrackingService พร้อมการแสดงแถบแจ้งเตือนที่ผู้ใช้มองเห็นได้ตลอดเวลา) <em>เฉพาะเมื่อผู้ใช้กดเริ่มบันทึกเส้นทางสำรวจ (Tracking Mode)</em> เพื่อคำนวณขนาดพื้นที่แปลงที่ดิน (ไร่-งาน-วา), ระยะความยาวแนวเขต, เส้นทางเดิน/ขับรถสำรวจ และคำนวณมุมราบ (Azimuth) ทั้งนี้แอปพลิเคชันไม่มีการเข้าถึงตำแหน่งในเบื้องหลังแบบไม่แจ้งเตือน (No Background Location without Foreground Notification)
                 </li>
                 <li>
                     <strong>ข้อมูลรูปภาพและกล้องถ่ายรูป (Camera &amp; Photo Data):</strong>
@@ -266,8 +266,16 @@
                     <br>เมื่อผู้ใช้เลือกเข้าสู่ระบบด้วย Google Sign-In แอปพลิเคชันจะรวบรวมข้อมูลพื้นฐาน ได้แก่ อีเมล (Email), ชื่อที่แสดง (Display Name), และรหัสประจำตัวผู้ใช้ (UID) เพื่อใช้ในการซิงค์ข้อมูลประวัติการสำรวจผ่าน Google Drive, การจัดการยอดเหรียญเครดิต (In-App Credits) และการตรวจสอบสิทธิ์ VIP สำหรับผู้ทดสอบ
                 </li>
                 <li>
+                    <strong>ข้อมูลการวินิจฉัยความเสถียรของแอป (Crash Logs &amp; App Diagnostics):</strong>
+                    <br>เราใช้บริการ Firebase Crashlytics และ Firebase Analytics ในการรวบรวมข้อมูลทางเทคนิคที่ไม่สามารถระบุตัวตนของคุณได้ (เช่น รุ่นอุปกรณ์, เวอร์ชันระบบปฏิบัติการ Android, และบันทึกข้อผิดพลาดเมื่อเกิดอาการแครช) เพื่อนำมาใช้ในการปรับปรุงความเสถียรและประสิทธิภาพของแอปพลิเคชัน
+                </li>
+                <li>
+                    <strong>ข้อมูลการซื้อและชำระเงิน (In-App Purchases):</strong>
+                    <br>การชำระเงินเพื่อซื้อเหรียญเครดิตในแอปพลิเคชันดำเนินการผ่านระบบ Google Play Billing ของ Google LLC โดยตรง ผู้พัฒนาไม่มีการจัดเก็บหรือเข้าถึงข้อมูลบัตรเครดิต บัญชีธนาคาร หรือข้อมูลทางการเงินใดๆ ของผู้ใช้
+                </li>
+                <li>
                     <strong>ข้อมูลการส่งออกไฟล์ทางรังวัด (Exported Files &amp; Storage):</strong>
-                    <br>แอปพลิเคชันสร้างไฟล์ส่งออกทางรังวัดตามคำสั่งของคุณ เช่น AutoCAD DXF, ESRI Shapefile (.zip), GeoJSON, CSV และดาวน์โหลดภาพแผนที่ดาวเทียมออฟไลน์ (Offline Tile Cache) มาเก็บไว้ในเครื่อง เพื่อให้สามารถทำงานได้ในพื้นที่ที่ไม่มีสัญญาณอินเทอร์เน็ต
+                    <br>แอปพลิเคชันสร้างไฟล์ส่งออกทางรังวัดตามคำสั่งของคุณ เช่น รายงาน PDF มาตรฐาน A4, AutoCAD DXF, ESRI Shapefile (.zip), GeoJSON, CSV และดาวน์โหลดภาพแผนที่ดาวเทียมออฟไลน์ (Offline Tile Cache) มาเก็บไว้ในเครื่อง เพื่อให้สามารถทำงานได้ในพื้นที่ที่ไม่มีสัญญาณอินเทอร์เน็ต
                 </li>
             </ul>
 
@@ -281,8 +289,10 @@
             <p>แอปพลิเคชันผสานการทำงานร่วมกับบริการภายนอกที่น่าเชื่อถือภายใต้นโยบายความปลอดภัย:</p>
             <ul>
                 <li><strong>Google Maps SDK &amp; Google Play Services:</strong> แสดงผลแผนที่ดาวเทียมและการระบุตำแหน่งพิกัด</li>
-                <li><strong>Firebase (Google LLC):</strong> บริการพิสูจน์ตัวตน (Authentication) และ Cloud Firestore สำหรับระบบจัดการเครดิต</li>
+                <li><strong>Google Play Billing (Google LLC):</strong> ประมวลผลการสั่งซื้อเหรียญเครดิตในแอปอย่างปลอดภัย</li>
+                <li><strong>Firebase (Google LLC):</strong> บริการพิสูจน์ตัวตน (Authentication), Cloud Firestore สำหรับระบบจัดการเครดิต, และ Firebase Crashlytics &amp; Analytics สำหรับรายงานความเสถียรของแอป</li>
                 <li><strong>AgroMonitoring (OpenWeather Ltd.):</strong> ดึงภาพถ่ายความสมบูรณ์ของพืชจากดาวเทียม Sentinel-2 (NDVI)</li>
+                <li><strong>Plant.id API &amp; Google Gemini AI:</strong> ประมวลผลและวินิจฉัยโรคพืชจากภาพถ่ายใบพืช</li>
                 <li><strong>Open-Meteo API:</strong> ดึงข้อมูลสภาพอากาศและระดับความสูงน้ำทะเลปานกลาง (Elevation MSL)</li>
                 <li><strong>ตลาดสี่มุมเมือง &amp; สศก. (data.go.th):</strong> ดึงข้อมูลราคาสินค้าเกษตรและราคาหน้าฟาร์มสาธารณะ</li>
             </ul>
@@ -328,7 +338,7 @@
         <!-- ==================== ENGLISH VERSION ==================== -->
         <div id="en">
             <h2>TraceTerra Privacy Policy &amp; Account Deletion</h2>
-            <p><strong>Effective Date:</strong> March 1, 2026 (Last Updated: March 2026)</p>
+            <p><strong>Effective Date:</strong> October 3, 2026 (Last Updated: October 2026)</p>
 
             <div class="highlight-box">
                 <p><strong>TraceTerra</strong> is committed to protecting your personal data and ensuring transparent compliance with the Google Play Developer Program Policies and international privacy regulations.</p>
@@ -338,7 +348,7 @@
             <ul>
                 <li>
                     <strong>Location Data (GPS):</strong>
-                    TraceTerra collects precise location data (latitude, longitude, elevation) both when the app is running in the foreground and in the background (via a foreground tracking service). This is strictly required to record surveying boundary lines, calculate land parcel area (Rai-Ngan-Wah / Sq.m.), compute azimuth bearings, and provide navigation. Background tracking only occurs when you explicitly tap the "Start Tracking" button.
+                    TraceTerra collects precise location coordinates (latitude, longitude, elevation) while the app is actively in use (Foreground) and via a persistent foreground service with a visible notification (TrackingService) when you tap "Start Tracking". This is strictly required to calculate land parcel area (Rai-Ngan-Wah / Sq.m.), record perimeter boundary lengths, plot traversal paths, and compute azimuth angles. The app does not access location silently in the background without user notification.
                 </li>
                 <li>
                     <strong>Camera and Photo Storage:</strong>
@@ -349,8 +359,16 @@
                     When signing in via Google Sign-In, we collect your email address, display name, and user ID (UID). This information is used for Google Drive survey data synchronization, In-App Credit management, and VIP testing authorization.
                 </li>
                 <li>
+                    <strong>Crash Logs &amp; App Diagnostics:</strong>
+                    We use Firebase Crashlytics and Firebase Analytics to collect non-personally identifiable diagnostic information (device model, Android OS version, and crash stack traces) to improve application stability and performance.
+                </li>
+                <li>
+                    <strong>In-App Purchases &amp; Payment Data:</strong>
+                    In-app credit purchases are processed directly and securely by Google Play Billing (Google LLC). TraceTerra does not collect, receive, or store any credit card or financial information.
+                </li>
+                <li>
                     <strong>Storage &amp; Cadastral Export Files:</strong>
-                    The app generates surveying files requested by you (AutoCAD DXF, ESRI Shapefile .zip, GeoJSON, CSV, and KMZ) and caches offline satellite map tiles locally on your device for offline fieldwork.
+                    The app generates surveying files requested by you (Standard A4 PDF Reports, AutoCAD DXF, ESRI Shapefile .zip, GeoJSON, CSV, and KMZ) and caches offline satellite map tiles locally on your device for offline fieldwork.
                 </li>
             </ul>
 
@@ -360,10 +378,13 @@
             <h3>3. Third-Party Services</h3>
             <p>TraceTerra integrates with trusted third-party SDKs and public APIs:</p>
             <ul>
-                <li>Google Maps SDK &amp; Google Play Services (Mapping &amp; Geocoding)</li>
-                <li>Firebase Authentication &amp; Firestore (Account &amp; Credit Management)</li>
+                <li>Google Maps SDK &amp; Google Play Services (Mapping &amp; Location)</li>
+                <li>Google Play Billing (Secure In-App Purchases)</li>
+                <li>Firebase Authentication, Firestore, Crashlytics &amp; Analytics (Google LLC)</li>
                 <li>AgroMonitoring (Sentinel-2 Satellite NDVI Vegetative Health Imagery)</li>
+                <li>Plant.id API &amp; Google Gemini AI (AI Plant Disease Diagnosis)</li>
                 <li>Open-Meteo DEM API (Weather &amp; Elevation MSL Data)</li>
+                <li>Thai Ministry of Agriculture / OAE (data.go.th public farm-gate crop prices)</li>
             </ul>
 
             <div class="deletion-card">
